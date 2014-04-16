@@ -21,12 +21,15 @@ angular.module('demo', ['ngLatLng'])
 Add a refrence to the function you require to your controller. 
 
 ```javascript 
-.controller('demoCtrl', ['$scope','latLngCurrentPosition','latLngDistance', function ($scope, latLngCurrentPosition, latLngDistance) {
+.controller('demoCtrl', ['$scope','latLngCurrentPosition','latLngDistance',
+function ($scope, latLngCurrentPosition, latLngDistance) {
+
+}
 ```
 
 Call the functions your require
 
-##LatLng-Distance 
+###LatLng-Distance 
 
 ```javascript
 $scope.currentPosition = {};
@@ -36,7 +39,7 @@ $scope.currentPosition.lng = result.coords.longitude
 }
 ```
 
-##atLng-Distance 
+###atLng-Distance 
 
 ```javascript 
 var distance = latLngDistance(place1.lat,place1.lng,place2.lat,place2.lng)
