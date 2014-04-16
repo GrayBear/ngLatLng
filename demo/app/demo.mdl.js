@@ -1,8 +1,13 @@
 ﻿angular.module('demo', ['ngLatLng'])
-    .controller('demoCtrl', ['$scope', 'placesLatLng', function ($scope, placesLatLng) {
-        console.log(placesLatLng);
+    .controller('demoCtrl', ['$scope', 'placesLatLng', 'latLngCurrentPosition', function ($scope, placesLatLng, latLngCurrentPosition) {
+
+        $scope.currentPosition = {};
         $scope.places = placesLatLng.getPlaces();
 
+        latLngCurrentPosition().then(function (result) {
+            $scope.currentPosition.lat = result.coords.latitude;
+            $scope.currentPosition.lng = result.coords.longitude
+        });
     }])
     .service('placesLatLng', [function () {
 
