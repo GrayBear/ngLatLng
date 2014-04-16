@@ -1,0 +1,1 @@
+﻿ngLatLng.service('latLngDayNight', [function () { }]);

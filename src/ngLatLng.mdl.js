@@ -1,0 +1,1 @@
+﻿var ngLatLng = angular.module('ngLatLng',[]);

@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>ngLatLng</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body ng-app="demo" ng-controller="demoCtrl">
+    <div class="container">
+        <h1>Ng-LatLng</h1>
+
+        {{test}}
+        <div class="row">
+            <div class="col-md-4" ng-repeat="city in places.cities">
+                <div class="panel panel-default ">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" ng-bind="city.city"></h3>
+                    </div>
+                    <div class="panel-body">
+                        Latitude : <span ng-bind="city.lat"></span> <br />
+                        Longitude : <span ng-bind="city.lng"></span>
+                        <br />
+                        <input type="button" ng-click="selectDestination(city)" class="btn btn-default" value="Select Destination" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-default ">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your location</h3>
+                    </div>
+                    <div class="panel-body">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <script src="app/lib/angular/angular.js"></script>
+        <script src="../ngLatLng.js"></script>
+        <script src="app/demo.mdl.js"></script>
+    </div>
+</body>
+</html>

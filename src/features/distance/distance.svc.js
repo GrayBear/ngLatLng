@@ -1,0 +1,5 @@
+﻿ngLatLng.service('latLngDistance', [function () {
+
+    
+
+}]);
