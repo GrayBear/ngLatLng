@@ -24,7 +24,7 @@ Add a refrence to the function you require to your controller.
 .controller('demoCtrl', ['$scope','latLngCurrentPosition','latLngDistance',
 function ($scope, latLngCurrentPosition, latLngDistance) {
 
-}
+}]);
 ```
 
 Call the functions your require
