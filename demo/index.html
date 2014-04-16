@@ -10,14 +10,15 @@
 
         {{test}}
         <div class="row">
-            <div class="col-md-4" ng-repeat="city in places.cities">
+            <div class="col-md-4" ng-repeat="city in places">
                 <div class="panel panel-default ">
                     <div class="panel-heading">
                         <h3 class="panel-title" ng-bind="city.city"></h3>
                     </div>
                     <div class="panel-body">
-                        Latitude : <span ng-bind="city.lat"></span> <br />
-                        Longitude : <span ng-bind="city.lng"></span>
+                        Latitude : <span ng-bind="city.lat | number:2"></span> <br />
+                        Longitude : <span ng-bind="city.lng | number:2"></span> <br />
+                        distance : <span ng-bind="city.distance | number:2"></span> KM
                         <br />
                         <input type="button" ng-click="selectDestination(city)" class="btn btn-default" value="Select Destination" />
                     </div>
