@@ -16,8 +16,49 @@ ngLatLng.service('latLngCurrentPosition', ['$window', '$q', function ($window, $
     }
 
 }]);
+///#source 1 1 /src/features/currenttime/currenttime.svc.js
+/// Returns current universal time
+/// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC
+
+ngLatLng.service('latLngCurrentTime', [function () {
+
+    return function () {
+
+        var date = new Date();
+        console.log(date);
+        return {
+            date: date,
+            year: date.getUTCFullYear(),
+            month: date.getUTCMonth(),
+            day: date.getUTCDay(),
+            time: date.getTime()
+        }
+
+    }
+
+}]);
 ///#source 1 1 /src/features/dayNight/dayNight.svc.js
-ngLatLng.service('latLngDayNight', [function () { }]);
+// good example not based on universal time though.
+// http://williams.best.vwh.net/sunrise_sunset_algorithm.htm
+
+ngLatLng.service('latLngDayNight', [function () {
+
+
+
+    return function (lat, lng) {
+
+        var n1 = (275 * month / 9);
+        var n2 = ((month + 9) / 12);
+
+
+
+    }
+
+
+
+
+
+}]);
 ///#source 1 1 /src/features/distance/distance.svc.js
 ngLatLng.service('latLngDistance', [function () {
     

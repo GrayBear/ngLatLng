@@ -8,6 +8,15 @@
     <div class="container">
         <h1>Ng-LatLng</h1>
 
+        <h2>Current UTC </h2>
+        <p>
+            Year: <span ng-bind="currentTime.year"></span><br />
+            Month: <span ng-bind="currentTime.month"></span><br />
+            Day: <span ng-bind="currentTime.day"></span><br />
+            Time: <span ng-bind="currentTime.time"></span>
+        </p>
+       
+
         {{test}}
         <div class="row">
             <div class="col-md-4" ng-repeat="city in places">
