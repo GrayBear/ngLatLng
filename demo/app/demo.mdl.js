@@ -4,13 +4,8 @@
         'placesLatLng',
         'latLngCurrentPosition',
         'latLngDistance',
-        'latLngCurrentTime',
-        function ($scope, placesLatLng, latLngCurrentPosition, latLngDistance, latLngCurrentTime) {
-
-            console.log(latLngCurrentTime);
-
-            $scope.currentTime = latLngCurrentTime();
- 
+        function ($scope, placesLatLng, latLngCurrentPosition, latLngDistance) {
+             
             $scope.currentPosition = {};
             $scope.places = placesLatLng.getPlaces();
 
@@ -67,7 +62,7 @@
                 {
                     city: "Hong Kong",
                     lat: 22.302698,
-                    lng: 114.160501,
+                    lng: -114.160501,
                 },
                 {
                     city: "North Pole",
@@ -87,7 +82,7 @@
                 {
                     city: "Sydney",
                     lat: -33.520,
-                    lng: 151.13,
+                    lng: -151.13,
                 },
         ]
 

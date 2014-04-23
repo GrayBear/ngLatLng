@@ -2,8 +2,6 @@
 <bundle minify="true" runOnBuild="true" output="ngLatLng.js"> 
   <file>/src/ngLatLng.mdl.js</file>  
 	<file>/src/features/currentposition/currentposition.svc.js</file>
-	<file>/src/features/currenttime/currenttime.svc.js</file>
-  <file>/src/features/dayNight/dayNight.svc.js</file>
   <file>/src/features/distance/distance.svc.js</file>
   <file>/src/features/season/season.svc.js</file>
 </bundle>
